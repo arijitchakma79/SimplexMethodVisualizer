@@ -1,4 +1,4 @@
-import type { Matrix, Vector } from "./types";
+import type { Matrix, Vector } from "./math";
 
 export interface LinearProgram {
     A: Matrix;        // constraint matrix (m x n)
@@ -6,3 +6,5 @@ export interface LinearProgram {
     p: Vector;        // objective coefficients (n x 1)
     sense: "max" | "min";
   }
+
+  
