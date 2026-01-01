@@ -1,0 +1,114 @@
+.lp-display {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 2px solid;
+}
+
+[data-theme="dark"] .lp-display {
+  border-top-color: #444;
+}
+
+[data-theme="light"] .lp-display {
+  border-top-color: #ddd;
+}
+
+.lp-display-header {
+  margin-bottom: 1rem;
+}
+
+.lp-display-header h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+[data-theme="dark"] .lp-display-header h3 {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+[data-theme="light"] .lp-display-header h3 {
+  color: #213547;
+}
+
+.lp-display-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.lp-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.lp-objective {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.lp-label {
+  font-weight: 600;
+  font-style: italic;
+  min-width: 80px;
+}
+
+[data-theme="dark"] .lp-label {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+[data-theme="light"] .lp-label {
+  color: #213547;
+}
+
+.lp-constraints {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-left: 80px;
+}
+
+.lp-constraint {
+  font-size: 1rem;
+}
+
+.lp-matrix-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.lp-matrix-label {
+  font-weight: 600;
+  font-family: 'Courier New', monospace;
+  font-size: 1.1rem;
+  padding-top: 0.5rem;
+}
+
+[data-theme="dark"] .lp-matrix-label {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+[data-theme="light"] .lp-matrix-label {
+  color: #213547;
+}
+
+/* KaTeX styling overrides */
+.lp-display .katex {
+  font-size: 1.1em;
+}
+
+.lp-display .katex-display {
+  margin: 0.5em 0;
+}
+
+[data-theme="dark"] .lp-display .katex {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+[data-theme="light"] .lp-display .katex {
+  color: #213547;
+}

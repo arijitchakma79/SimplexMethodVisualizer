@@ -1,0 +1,133 @@
+.tableau-history {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 2px solid;
+}
+
+[data-theme="dark"] .tableau-history {
+  border-top-color: #444;
+}
+
+[data-theme="light"] .tableau-history {
+  border-top-color: #ddd;
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.history-header h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+[data-theme="dark"] .history-header h3 {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+[data-theme="light"] .history-header h3 {
+  color: #213547;
+}
+
+.history-count {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+[data-theme="dark"] .history-count {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+[data-theme="light"] .history-count {
+  color: #666;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.history-item {
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  border: 1px solid;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+[data-theme="dark"] .history-item {
+  border-color: #444;
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+[data-theme="dark"] .history-item:hover {
+  border-color: #646cff;
+  background-color: rgba(100, 108, 255, 0.1);
+}
+
+[data-theme="light"] .history-item {
+  border-color: #ddd;
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+[data-theme="light"] .history-item:hover {
+  border-color: #646cff;
+  background-color: rgba(100, 108, 255, 0.05);
+}
+
+.history-item.active {
+  border-color: #646cff;
+  background-color: rgba(100, 108, 255, 0.15);
+}
+
+[data-theme="light"] .history-item.active {
+  background-color: rgba(100, 108, 255, 0.1);
+}
+
+.history-step {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+[data-theme="dark"] .history-step {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+[data-theme="light"] .history-step {
+  color: #213547;
+}
+
+.history-pivot {
+  font-size: 0.85rem;
+  font-family: 'Courier New', monospace;
+}
+
+[data-theme="dark"] .history-pivot {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+[data-theme="light"] .history-pivot {
+  color: #666;
+}
+
+.history-timestamp {
+  font-size: 0.75rem;
+}
+
+[data-theme="dark"] .history-timestamp {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+[data-theme="light"] .history-timestamp {
+  color: #999;
+}

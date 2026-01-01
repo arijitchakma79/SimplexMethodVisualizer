@@ -5,6 +5,7 @@ export interface LinearProgram {
     b: Vector;        // b (m x 1)
     p: Vector;        // objective coefficients (n x 1)
     sense: "max" | "min";
+    originalOperators?: ("<=" | ">=" | "=")[];  // Original operators for display
   }
 
   
